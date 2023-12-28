@@ -1,0 +1,11 @@
+mod_tile is a system to serve raster tiles, for example to use with a slippy map
+
+The system is split into two parts:
+
+- mod_tile - A custom Apache module which is responsible for serving tiles and
+             requests the rendering of tiles if they aren't already available
+             in cache or if they have changed since.
+- renderd - A rendering back-end, that takes requests from mod_tile, and
+            renders them to the file system. It is also responsible for
+            queueing requests to ensure the server is not overloaded if many
+            requests come in simultaneously.

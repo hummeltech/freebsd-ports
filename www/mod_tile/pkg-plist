@@ -1,0 +1,17 @@
+/etc/renderd.conf
+bin/render_expired
+bin/render_list
+bin/render_old
+bin/render_speedtest
+bin/renderd
+%%APACHEETCDIR%%/modules.d/080_%%AP_NAME%%.conf
+%%APACHEMODDIR%%/%%AP_MODULE%%
+share/man/man1/render_expired.1.gz
+share/man/man1/render_list.1.gz
+share/man/man1/render_old.1.gz
+share/man/man1/render_speedtest.1.gz
+share/man/man1/renderd.1.gz
+share/man/man5/renderd.conf.5.gz
+@dir /var/cache/renderd/%%AP_NAME%%s
+@dir /var/cache/renderd
+@dir /var/run/renderd
